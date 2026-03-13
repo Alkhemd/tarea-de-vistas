@@ -1,3 +1,27 @@
+Requisitos Previos: Instalacion y Configuracion Inicial de SQL Server
+
+Antes de realizar las actividades, es necesario contar con el motor de base de datos y la interfaz de administracion. A continuacion, se detallan los enlaces y pasos de instalacion:
+
+1. Enlaces de Descarga:
+- Microsoft SQL Server (Version Developer o Express): https://www.microsoft.com/es-es/sql-server/sql-server-downloads
+- SQL Server Management Studio (SSMS): https://learn.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms
+
+2. Orden y Pasos de Instalacion:
+- Paso 1: Instalar primero el motor de Microsoft SQL Server. Durante la instalacion, elegir el tipo de instalacion "Basica" para instalar los componentes por defecto.
+- Paso 2: Finalizada la instalacion del motor, instalar SQL Server Management Studio (SSMS). La instalacion es directa (siguiente, siguiente, finalizar).
+
+3. Configuracion Inicial del Usuario 'sa':
+- Por defecto, SQL Server se instala utilizando Autenticacion de Windows.
+- Para habilitar el usuario administrador 'sa', primero iniciar sesion en SSMS utilizando la Autenticacion de Windows (conectando al servidor 'localhost').
+- En el Explorador de objetos, ir a 'Seguridad' -> 'Inicios de sesion' y hacer doble clic sobre 'sa'.
+- En la pestana 'General', asignar la contrasena (para estos ejercicios se configuro la contrasena: '123456').
+- En la pestana 'Estado', asegurarse de que el inicio de sesion este marcado como 'Habilitado'.
+- Finalmente, dar clic derecho en el nombre del servidor principal en el Explorador de objetos, ir a 'Propiedades' -> 'Seguridad' y cambiar el modo de autenticacion al 'Modo de autenticacion de Windows y SQL Server'.
+- Reiniciar el servicio de SQL Server para aplicar los cambios.
+- A partir de esto, ya se puede iniciar sesion utilizando Autenticacion de SQL Server con el usuario 'sa' y contrasena '123456'.
+
+---
+
 Parte 1: Iniciando sesion desde SQL Server Managment Studio
 
 1. Se hace clic en el boton Inicio
